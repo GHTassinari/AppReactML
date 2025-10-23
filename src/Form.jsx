@@ -31,7 +31,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://flaskmlif-h8atgwbbb2ftgzat.brazilsouth-01.azurewebsites.net/api/predict", {
+      const response = await axios.post("https://flaskmlif-h8atgwbbb2ftgzat.brazilsouth-01.azurewebsites.net/api/predict", {
         sl: parseFloat(sl),
         sw: parseFloat(sw),
         pl: parseFloat(pl),
